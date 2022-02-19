@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 #header .social-links a:hover {
-  background: #18d26e;
+  background: var(--color_enfasis_claro); 
 }
 @media (max-width: 992px) {
   #header h1 {
@@ -907,7 +907,7 @@ section .container {
   transition: 0.3s;
 }
 .contact .info-box .social-links a:hover {
-  color: #18d26e;
+  color: var(--color_enfasis_claro); ;
 }
 .contact .php-email-form {
   padding: 30px;
