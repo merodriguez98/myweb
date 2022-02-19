@@ -8,17 +8,21 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
+  background-color: var(--color_background_oscuro);
   color: #fff;
   position: relative;
   background: transparent;
+  --color_background_oscuro: #040404;
+  --color_enfasis_claro: #249AE0;
+  --color_enfasis_oscuro: #0E6BA2;
 }
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: var(--color_background_oscuro) url("../img/bg.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -81,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #header h2 span {
   color: #fff;
-  border-bottom: 2px solid #18d26e;
+  border-bottom: 2px solid var(--color_enfasis_oscuro); /* raya titulo home */
   padding-bottom: 6px;
 }
 #header img {
@@ -205,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: var(--color_enfasis_oscuro); /*raya en la barra */
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -330,7 +334,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: var(--color_enfasis_oscuro); /* raya en los titulos */
   margin: 4px 10px;
 }
 .section-title p {
@@ -349,7 +353,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: var(--color_enfasis_oscuro); /*color "sobre mi"*/
 }
 .about-me .content ul {
   list-style: none;
@@ -366,7 +370,7 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #18d26e;
+  color: var(--color_enfasis_claro); /*flechas "sobre mi"*/
   line-height: 0;
 }
 .about-me .content p:last-child {
@@ -871,7 +875,7 @@ section .container {
 }
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #18d26e;
+  color: var(--color_enfasis_oscuro); /*iconos redes sociales*/
   border-radius: 50%;
   padding: 14px;
   float: left;
