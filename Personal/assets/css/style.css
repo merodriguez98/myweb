@@ -37,12 +37,12 @@ body::before {
 }
 
 a {
-  color: #18d26e;
+  color: var(--color_enfasis_oscuro);
   text-decoration: none;
 }
 
 a:hover {
-  color: #35e888;
+  color: var(--color_enfasis_claro);
   text-decoration: none;
 }
 
@@ -398,7 +398,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #18d26e;
+  color: var(--color_enfasis_oscuro);
   border-radius: 50px;
   line-height: 0;
 }
@@ -444,7 +444,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #18d26e;
+  background-color: var(--color_enfasis_oscuro);
 }
 
 /*--------------------------------------------------------------
@@ -539,7 +539,7 @@ section .container {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: var(--color_enfasis_oscuro);
 }
 
 /*--------------------------------------------------------------
@@ -564,7 +564,7 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #18d26e;
+  color: var(--color_enfasis_oscuro);
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
@@ -592,8 +592,8 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  background: var(--color_enfasis_oscuro);
+  border: 2px solid var(--color_enfasis_oscuro);
 }
 
 /*--------------------------------------------------------------
@@ -609,7 +609,7 @@ section .container {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #18d26e;
+  background: var(--color_enfasis_oscuro);
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -648,17 +648,17 @@ section .container {
   margin-bottom: 0;
 }
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
+  background: var(--color_enfasis_oscuro);
+  border-color: var(--color_enfasis_oscuro);
 }
 .services .icon-box:hover .icon {
   background: #fff;
 }
 .services .icon-box:hover .icon i {
-  color: #18d26e;
+  color: var(--color_enfasis_oscuro);
 }
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: var(--color_enfasis_claro);
 }
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
   color: #fff;
@@ -693,7 +693,7 @@ section .container {
   border-radius: 4px;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: var(--color_enfasis_oscuro);
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -861,7 +861,7 @@ section .container {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: var(--color_enfasis_oscuro);
 }
 
 /*--------------------------------------------------------------
@@ -927,7 +927,7 @@ section .container {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
+  background: var(--color_enfasis_oscuro);
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -945,7 +945,7 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid var(--color_enfasis_oscuro);
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -977,7 +977,7 @@ section .container {
   padding: 12px 15px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #18d26e;
+  background: var(--color_enfasis_oscuro);
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -985,7 +985,7 @@ section .container {
   border-radius: 4px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #15bb62;
+  background: var(--color_enfasis_claro);
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1026,7 +1026,7 @@ section .container {
   }
 }
 .credits a {
-  color: #18d26e;
+  color: var(--color_enfasis_oscuro);
   transition: 0.3s;
 }
 .credits a:hover {
