@@ -18,6 +18,7 @@ body {
   --color_background_oscuro: #040404;
   --color_enfasis_claro: #249AE0;
   --color_enfasis_oscuro: #0E6BA2;
+  --color_menos_enfasis: rgba(255, 255, 255, 0.8);
 }
 body::before {
   content: "";
@@ -153,12 +154,12 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-top .navbar {
   margin: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   #header.header-top {
     height: 60px;
   }
   #header.header-top h1 {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
@@ -348,7 +349,7 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# About
+# About - sobre mi
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
@@ -545,6 +546,12 @@ section .container {
 /*--------------------------------------------------------------
 # cv
 --------------------------------------------------------------*/
+
+#cv ul span {
+  color: #fff;
+  border-bottom: 2px solid var(--color_enfasis_oscuro); /* raya titulo  */
+  padding-bottom: 0px;
+}
 .cv .cv-title {
   font-size: 26px;
   font-weight: 700;
@@ -561,7 +568,13 @@ section .container {
 .cv .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: var(--color_enfasis_oscuro); /*color "sobre mi"*/
+  color: var(--color_enfasis_oscuro); /*color titulos dentro de cv*/
+}
+.cv .content h5 {
+  padding: 5px 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color_menos_enfasis); /*color titulos dentro de cv*/
 }
 .cv .cv-item h4 {
   line-height: 18px;
