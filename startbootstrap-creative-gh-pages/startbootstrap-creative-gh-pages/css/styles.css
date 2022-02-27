@@ -76,6 +76,21 @@
   }
 }
 
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: auto;
+  margin-left: -50px;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
