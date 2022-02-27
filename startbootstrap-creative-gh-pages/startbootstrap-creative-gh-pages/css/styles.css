@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #f4623a;
+  --bs-primary: var(--color_enfasis_oscuro);
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -87,6 +87,9 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  --color_enfasis_oscuro: #0E6BA2;
+  --color_enfasis_claro: #10a0f3;
+  --color_enfasis_oscuro_plus: #044368;
 }
 
 hr {
@@ -2997,7 +3000,7 @@ textarea.form-control-lg {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: var(--color_enfasis_oscuro);;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -3023,7 +3026,7 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
+  box-shadow: 0 0 0 0.25rem var(--color_enfasis_oscuro);;
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
@@ -3032,19 +3035,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  background-color: var(--color_enfasis_oscuro);
+  border-color: var(--color_enfasis_oscuro);
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #cf5331;
-  border-color: #c34e2e;
+  background-color: var(--color_enfasis_oscuro_plus); /*color seleccion btn*/
+  border-color:  var(--color_enfasis_oscuro_plus);
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #cf5331;
-  border-color: #c34e2e;
-  box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
+  background-color: var(--color_enfasis_oscuro_plus);
+  border-color:  var(--color_enfasis_oscuro_plus);
+  box-shadow: 0 0 0 0.25rem  var(--color_enfasis_oscuro);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
@@ -3052,12 +3055,12 @@ textarea.form-control-lg {
   border-color: #b74a2c;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
+  box-shadow: 0 0 0 0.25rem  var(--color_enfasis_oscuro);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #f4623a;
-  border-color: #f4623a;
+  background-color:  var(--color_enfasis_oscuro);
+  border-color:  var(--color_enfasis_oscuro);
 }
 
 .btn-secondary {
@@ -3944,7 +3947,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #f4623a;
+  color: var(--color_enfasis_oscuro);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3954,7 +3957,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #c34e2e;
+  color: var(--color_enfasis_oscuro);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4001,7 +4004,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #f4623a;
+  background-color: var(--color_enfasis_oscuro);
 }
 
 .nav-fill > .nav-link,
@@ -11319,7 +11322,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: blue;
+  background-color: var(--color_enfasis_oscuro); /* color divider principal */
   opacity: 1;
 }
 
@@ -11348,7 +11351,7 @@ hr.divider-light {
   color: #f4623a;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: var(--color_enfasis_claro) !important; /* color navbar seccion seleccionada */
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11356,13 +11359,13 @@ hr.divider-light {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7); /* color Matias Emanuel Rodriguez principal */
   }
   #mainNav .navbar-brand:hover {
     color: #fff;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7); /* color navbar primera pag*/
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11382,10 +11385,10 @@ hr.divider-light {
     color: #f4623a;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-    color: #212529;
+    color: #212529; /*color navbar sin seleccionar */
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-    color: #f4623a;
+    color: var(--color_enfasis_oscuro); /* color navbar futuro seleccion */
   }
 }
 
