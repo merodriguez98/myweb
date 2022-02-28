@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: var(--color_enfasis_oscuro);
+  --bs-primary: red;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -65,6 +65,7 @@
   --color_enfasis_oscuro: #0E6BA2;
   --color_enfasis_claro: #10a0f3;
   --color_enfasis_oscuro_plus: #044368;
+  --color_titulo_claro: #CFE2ED;
 }
 
 *,
@@ -90,6 +91,9 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.about .content h2 {
+  color: var(--color_titulo_claro);
 }
 
 hr {
@@ -219,7 +223,7 @@ small, .small {
 
 mark, .mark {
   padding: 0.2em;
-  background-color: red;
+  background-color: #fcf8e3;
 }
 
 sub,
