@@ -22,6 +22,11 @@ a:hover {
   color: #067ded;
   text-decoration: none;
 }
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 h1,
 h2,
@@ -921,7 +926,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #eef7ff;
+  background: #eef7ff00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -938,7 +943,7 @@ section {
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #728394;
 }
 .contact .info .email,
