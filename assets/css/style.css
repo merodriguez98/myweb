@@ -441,6 +441,69 @@ section {
   border: 2px solid var(--color_enfasis_claro);
 }
 
+.work button[type="submit"] {
+  background: var(--color_fondo);
+  border: 0;
+  padding: 10px 35px;
+  color: var(--color_letras_oscuro);
+  transition: 0.4s;
+  border-radius: 18px;
+}
+.work button[type="submit"]:hover {
+  background: var(--color_enfasis_oscuro);
+}
+
+.work .work-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+.work .work-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--color_enfasis_claro);
+  position: relative;
+}
+.work .work-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: var(--color_enfasis_claro);
+  margin-bottom: 10px;
+}
+.work .work-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.work .work-item ul {
+  padding-left: 20px;
+}
+.work .work-item ul li {
+  padding-bottom: 10px;
+}
+.work .work-item:last-child {
+  padding-bottom: 0;
+}
+.work .work-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #e6e9ec;
+  border: 2px solid var(--color_enfasis_claro);
+}
+
 .portfolio-details {
   padding-top: 40px;
 }
